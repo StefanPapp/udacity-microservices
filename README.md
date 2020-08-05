@@ -72,4 +72,14 @@ Create an AWS S3 bucket. Set the config values for environment variables prefixe
     ```bash
     npm audit fix
     ```
-5. In `set_env.sh`, environment variables are set with `export $VAR=value`. Setting it this way is not permanent; every time you open a new terminal, you will have to run `set_env.sh` to reconfigure your environment variables. To verify if your environment variable is set, you can check the variable with a command like `echo $POSTGRES_USERNAME`.
+5. Set environments 
+  AWS_MEDIA_BUCKET: 
+  AWS_PROFILE:
+  AWS_REGION: 
+  JWT_SECRET: 
+  POSTGRESS_DATABASE:
+  POSTGRESS_HOST:
+  POSTGRESS_PASSWORD:
+  POSTGRESS_USERNAME:
+
+echo -n 'udacity-udagram-papp' | base64
