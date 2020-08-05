@@ -82,4 +82,5 @@ Create an AWS S3 bucket. Set the config values for environment variables prefixe
   POSTGRESS_PASSWORD:
   POSTGRESS_USERNAME:
 
-echo -n 'udacity-udagram-papp' | base64
+# how to create encoded
+echo 'to-be-encoded' | base64

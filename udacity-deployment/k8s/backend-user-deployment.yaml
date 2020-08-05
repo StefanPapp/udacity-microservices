@@ -28,32 +28,32 @@ spec:
         env:
         - name: POSTGRESS_PASSWORD
           valueFrom:
-            - secretRef:
+            secretKeyRef:
               name: aws-secret
               key: POSTGRESS_PASSWORD
         - name: POSTGRESS_USERNAME
           valueFrom:
-            - secretRef:
+            secretKeyRef:
               name: aws-secret
               key: POSTGRESS_USERNAME
         - name: URL
           valueFrom:
-            - secretRef:
+            secretKeyRef:
               name: aws-secret
               key: URL
         - name: JWT_SECRET
           valueFrom:
-            - secretRef:
+            secretKeyRef:
               name: aws-secret
               key: JWT_SECRET
         - name: POSTGRESS_DATABASE
           valueFrom:
-            - secretRef:
+            secretKeyRef:
               name: aws-secret
               key: POSTGRESS_DATABASE
         - name: POSTGRESS_HOST
           valueFrom:
-            - secretRef:
+            secretKeyRef:
               name: aws-secret
               key: POSTGRESS_HOST
 
